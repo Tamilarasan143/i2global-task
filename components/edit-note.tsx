@@ -1,6 +1,7 @@
 "use client";
 import { Note, useNotesContext } from "@/provider/notes-context-provider";
 import React, { useState } from "react";
+import RichTextEditor from "./rich-text-editor/editor";
 
 export const EditNote = ({
   children,
@@ -64,15 +65,7 @@ export const EditNote = ({
                   {error}
                 </p>
               )}
-              <input
-                type="text"
-                name="note"
-                placeholder="Note"
-                value={noteValue}
-                onChange={(e) => setNoteValue(e.target.value)}
-                className="w-full px-4 py-2 border rounded-lg"
-                required
-              />
+                <RichTextEditor content={noteValue} setContent={setNoteValue}/>
               <div className="flex justify-end gap-x-3 flex-1">
                 <button
                   onClick={() => handleUpdateNote()}

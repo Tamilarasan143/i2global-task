@@ -2,6 +2,7 @@
 
 import { useNotesContext } from "@/provider/notes-context-provider";
 import { useState } from "react";
+import RichTextEditor from "./rich-text-editor/editor";
 
 export default function AddNote() {
   const [open, setOpen] = useState(false);
@@ -77,15 +78,8 @@ export default function AddNote() {
                 className="w-full px-4 py-2 border rounded-lg"
                 required
               />
-              <input
-                type="text"
-                name="note"
-                placeholder="Note"
-                value={note}
-                onChange={(e) => setNote(e.target.value)}
-                className="w-full px-4 py-2 border rounded-lg"
-                required
-              />
+              <RichTextEditor content={note} setContent={setNote}/>
+             
               <div className="flex justify-end gap-x-3">
                 <button
                   onClick={handleAddNote}

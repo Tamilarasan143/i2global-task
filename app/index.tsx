@@ -1,11 +1,12 @@
 "use client";
 import { EditNote } from "@/components/edit-note";
+import RichTextPreview from "@/components/rich-text-editor/preview";
 import { useNotesContext } from "@/provider/notes-context-provider";
 import React from "react";
 
 export const NotesIndex = () => {
   const { notes } = useNotesContext();
-
+ console.log('notes ===>', notes)
   return (
     <div className="min-h-screen max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col pt-22 bg-gradient-to-br">
       {notes.length === 0 ? (
@@ -27,7 +28,7 @@ export const NotesIndex = () => {
             key={id}
             className="bg-white rounded-xl shadow-md p-6 mb-6 transition hover:shadow-lg"
           >
-            <div className="flex items-center justify-between">
+            <div className="flex items-center mb-2 justify-between">
               <h2 className="text-2xl text-black font-bold">{note.title}</h2>
               <EditNote note={note}>
                 <button
@@ -46,7 +47,8 @@ export const NotesIndex = () => {
                 </button>
               </EditNote>
             </div>
-            <p className="text-gray-700 mt-2 whitespace-pre-line">{note.note}</p>
+            <RichTextPreview content={note.note}/>
+      
           </div>
         ))
       )}
