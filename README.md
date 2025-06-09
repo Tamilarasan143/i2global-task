@@ -63,7 +63,7 @@ npm run dev
 
  Responsive Tailwind CSS layout
 
- Rich text editor (optional enhancement)
+ Tip Tap Rich text editor
 
 🧼 Code Optimization
 Component-based architecture
