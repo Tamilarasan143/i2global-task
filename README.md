@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Notes App (Next.js)
 
-## Getting Started
+A simple and elegant Notes application built with **Next.js**, **Tailwind CSS**, and **React Context API** for state management. Users can sign up, sign in, and manage personal notes with full CRUD functionality.
 
-First, run the development server:
+## 🚀 Features
+
+- ✨ User Authentication (Sign Up / Sign In)
+- 📋 Create, Read, Update, Delete Notes
+- 🏠 Home Page displaying user notes
+- 📦 SEO optimized with meta tags (title, description, OG, keywords)
+- 💡 Fully responsive UI using Tailwind CSS
+- 🧠 State management using Context API
+
+## 📁 Project Structure
+
+/app → Home page (list of notes)
+/sign-in → Sign In page
+/sign-up → Sign Up page
+/components → Reusable UI components
+/context → Notes & Auth Context Providers
+/lib → Utility functions
+/public → Static assets
+/styles → Tailwind CSS config
+
+bash
+Copy
+Edit
+
+## 🛠️ Tech Stack
+
+| Technology      | Description                           |
+|-----------------|---------------------------------------|
+| Next.js         | React framework for SSR & routing     |
+| Tailwind CSS    | Utility-first CSS framework           |
+| Context API     | Lightweight state management          |
+| TypeScript      | Type-safe JavaScript (optional)       |
+
+## 📦 Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/Tamilarasan143/i2global-task.git
+cd notes-app
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+✅ Functionality Checklist
+ Sign In & Sign Up pages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+ Home page with all notes listed
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ Add new note
 
-## Learn More
+ View, Edit, and Delete a note
 
-To learn more about Next.js, take a look at the following resources:
+ Context-based state management
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ SEO with title, description, og:title, og:image, keywords
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ Responsive Tailwind CSS layout
 
-## Deploy on Vercel
+ Rich text editor (optional enhancement)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🧼 Code Optimization
+Component-based architecture
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+SEO metadata setup in <head>
+
+Reusable button, input, form components
+
+Proper file structure and folder separation
+
+📄 License
+MIT License
+
+Made with ❤️ by Tamilarasan Elumalai
+
