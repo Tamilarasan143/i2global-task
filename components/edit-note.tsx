@@ -49,10 +49,10 @@ export const EditNote = ({
       {open && (
         <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
           <div className="bg-yellow-100 rounded-xl w-[90%] max-w-md shadow-xl relative">
-            <div className="p-3 bg-[#CC9F67]  rounded-t-xl">
+            <div className="p-3 bg-[#F6C59E]  rounded-t-xl">
               <button
                 onClick={() => handleClose()}
-                className="absolute top-3 right-4 text-xl  text-red-500"
+                className="absolute cursor-pointer top-3 right-4 text-xl  text-red-500"
               >
                 ✕
               </button>
