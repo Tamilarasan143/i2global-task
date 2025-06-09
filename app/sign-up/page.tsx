@@ -4,6 +4,12 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Sign Up",
+  description: "Create a new account to start managing your notes.",
+  keywords: ["Notes App", "Register", "Sign Up", "Create Account", "Next.js Notes"],
+  openGraph: {
+    title: "Sign Up - Notes App",
+    description: "Register for a new account and begin using your notes dashboard.",
+  },
 };
 
 export default function SignUpPage() {

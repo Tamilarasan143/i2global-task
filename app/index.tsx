@@ -8,7 +8,10 @@ export const NotesIndex = () => {
   const { notes } = useNotesContext();
  console.log('notes ===>', notes)
   return (
-    <div className="min-h-screen max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col pt-22 bg-gradient-to-br">
+    <main
+      className="min-h-screen max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col pt-22 bg-gradient-to-br"
+      role="main"
+    >
       {notes.length === 0 ? (
         <div className="flex flex-col items-center justify-center text-center mt-20 text-gray-600">
           <svg
@@ -52,6 +55,6 @@ export const NotesIndex = () => {
           </div>
         ))
       )}
-    </div>
+    </main>
   );
 };

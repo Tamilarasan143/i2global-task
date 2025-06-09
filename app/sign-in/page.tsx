@@ -4,7 +4,14 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Sign In",
+  description: "Log in to your account to manage and view your notes.",
+  keywords: ["Notes App", "Login", "Sign In", "React Notes", "Next.js Notes"],
+  openGraph: {
+    title: "Sign In - Notes App",
+    description: "Access your personal notes by logging in to your account.",
+  },
 };
+
 
 export default function SignInPage() {
   return (
