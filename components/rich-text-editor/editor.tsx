@@ -23,6 +23,7 @@ const RichTextEditor = ({
       TextAlign.configure({ types: ["heading", "paragraph"] }),
     ],
     content: content,
+    
     editorProps: {
       attributes: {
         class: " dark:format-invert focus:outline-none format-blue max-w-none",
@@ -104,6 +105,7 @@ const RichTextEditor = ({
 
       <EditorContent
         editor={editor}
+        placeholder="Notes"
         className="h-[100px] overflow-y-auto border border-gray-300 rounded p-2 text-sm"
       />
     </div>

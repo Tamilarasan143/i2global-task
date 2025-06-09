@@ -75,7 +75,7 @@ export default function AddNote() {
                 placeholder="Title"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
-                className="w-full px-4 py-2 border rounded-lg"
+                className="w-full bg-white px-4 py-2 border rounded-lg"
                 required
               />
               <RichTextEditor content={note} setContent={setNote}/>

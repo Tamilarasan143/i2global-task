@@ -26,7 +26,7 @@ export default function SignUpPage() {
               id="name"
               name="name"
               placeholder="Name"
-              className="w-full px-4 py-2 border rounded-lg"
+              className="w-full bg-white px-4 py-2 border rounded-lg"
               required
             />
           </div>
@@ -40,7 +40,7 @@ export default function SignUpPage() {
               id="email"
               name="email"
               placeholder="Email"
-              className="w-full px-4 py-2 border rounded-lg"
+              className="w-full bg-white px-4 py-2 border rounded-lg"
               required
             />
           </div>
@@ -54,7 +54,7 @@ export default function SignUpPage() {
               id="password"
               name="password"
               placeholder="Password"
-              className="w-full px-4 py-2 border rounded-lg"
+              className="w-full bg-white px-4 py-2 border rounded-lg"
               required
             />
           </div>
@@ -68,7 +68,7 @@ export default function SignUpPage() {
               id="confirmPassword"
               name="confirmPassword"
               placeholder="Confirm Password"
-              className="w-full px-4 py-2 border rounded-lg"
+              className="w-full bg-white px-4 py-2 border rounded-lg"
               required
             />
           </div>
