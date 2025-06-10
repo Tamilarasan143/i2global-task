@@ -17,8 +17,7 @@ A simple and elegant Notes application built with **Next.js**, **Tailwind CSS**,
 /sign-in → Sign In page
 /sign-up → Sign Up page
 /components → Reusable UI components
-/context → Notes & Auth Context Providers
-/lib → Utility functions
+/provider → Notes & Auth Context Providers
 /public → Static assets
 /styles → Tailwind CSS config
 
@@ -77,5 +76,5 @@ Proper file structure and folder separation
 📄 License
 MIT License
 
-Made with ❤️ by Tamilarasan Elumalai
+Task done by Tamilarasan Elumalai
 
